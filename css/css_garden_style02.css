@@ -1,0 +1,786 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Cookie', cursive;
+   box-sizing: border-box;
+   transition: 0.5s;
+   cursor: url(./cursor3.png) 0 100,auto;
+ }
+ 
+ 
+ #css-zen-garden {
+   background-image: url(https://anntw-prod.s3.amazonaws.com/assets/images/000/020/181/big/%E4%BB%A5%E8%89%B2%E5%88%97%E8%80%83%E5%8F%A4%E6%96%B0%E7%99%BC%E7%8F%BE%E3%80%80%E7%A2%91%E6%96%87%E5%87%BA%E7%8F%BE%E8%81%96%E7%B6%93%E4%BA%BA%E5%90%8D.jpg?1438070767);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   overflow-x: hidden;
+   padding: 0%;
+ }
+ 
+ /* 更改滾輪顏色 */
+*::-webkit-scrollbar {  
+   width: 20px;  
+   }  
+*::-webkit-scrollbar-track-piece {  
+   background-color: #dfcda0;  
+   } /* 滾輪背景顏色 */  
+     
+ *::-webkit-scrollbar-track {  
+   background-color: #ffae00;  
+   } /* 外層滑軌背景顏色 */  
+     
+ *::-webkit-scrollbar-thumb {  
+   /* background-color: rgba(255,255,255,.6);   */
+   /* background-image: url(https://cdn.hk01.com/di/media/images/2076178/org/3291b87faf0a3a9955436bad89c60b98.jpg/Ykel-gHgs-740wUt2q04LC9DU6jtIwbS0Az3q9AM96s?v=w1920);
+   background-repeat: no-repeat; */
+   background-color: cornsilk;
+   border: cornsilk solid 5px;
+   border-radius: 10%;
+   } /* 內層滑塊背景顏色 */  
+     
+ *:-webkit-scrollbar-button {  
+   background-color: #fff;  
+   display: none;  
+   } /* 滑軌兩端按鈕顏色 */  
+ 
+html {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font: 75% georgia, sans-serif;
+   line-height: 1.88889;
+   color: #555753;
+   /* background:url(./bgpic2.jpg) center center no-repeat;
+   background-size: contain; */
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   content: ;
+ 
+}
+p {
+   margin-top: 0;
+   text-align: justify;
+}
+h3 {
+   font: italic normal 1.4em georgia, sans-serif;
+   letter-spacing: 1px;
+   margin-bottom: 0;
+   color: #7d775c;
+}
+a:link {
+   font-weight: bold;
+   text-decoration: none;
+   color: #caa245;
+   z-index: 99;
+}
+a:visited {
+   font-weight: bold;
+   text-decoration: none;
+   color: #caa245;
+}
+a:hover,
+a:focus,
+a:active {
+   text-decoration: underline;
+   color: #ffae00;
+}
+abbr {
+   border-bottom: none;
+   font-family: 'Cookie', cursive;
+font-size: 2rem;
+}
+
+.intro {
+   min-width: 470px;
+   width: 100%;
+   position: relative;
+   
+}
+
+header h1 {
+   top: 210%;
+   font-size: 50px;
+   color: white;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   animation-name: slideDown 2s;
+	-webkit-animation-name: slideDown;	
+/* slidedown動畫 */
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+   visibility: visible !important;	
+   margin: auto;
+   background: rgba(0, 0, 0, 0.1);
+   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+   text-align: center;
+   
+}
+
+header h2 {
+   color: white;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+/* slidedown動畫 */
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;	
+}
+
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+header {
+   background-image: url(https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Other-Explore-Photos/H-P/mythology-cat-bastet.ngsversion.1406150741896.adapt.1900.1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height:100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: -3%;
+   /* fade in動畫 */
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+   -o-animation: fadein 2s; /* Opera < 12.1 */
+   animation: fadein 2s ;
+   z-index: -999;
+   
+}
+
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+h1, h1::before, h1::after {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 500px;
+   height: 200px;
+   z-index: 999;
+ }
+  
+ h1::before, h1::after {
+   content: '';
+   z-index: 999;
+   margin: -5%;
+   box-shadow: inset 0 0 0 2px;
+   animation: clipMe 8s linear infinite;
+ }
+ h1::before {
+   animation-delay: -4s;
+   z-index: 999;
+ }
+  
+ @keyframes clipMe {
+   0%, 100% {
+     clip: rect(0px, 520.0px, 2px, 0px);
+   }
+   25% {
+     clip: rect(0px, 2px, 520.0px, 0px);
+   }
+   50% {
+     clip: rect(518.0px, 520.0px, 520.0px, 0px);
+   }
+   75% {
+     clip: rect(0px, 520.0px, 520.0px, 518.0px);
+   }
+ }   
+ @keyframes typing {
+   from { width: 0 }
+ }
+ 
+ .preamble h3 {
+   width: 10em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 5s steps(11) ;
+   font-size: 2rem;
+   font-family: 'Cookie', cursive;
+ }
+ .explanation h3 {
+   width: 10em;
+   overflow: hidden;
+   white-space: nowrap;
+   /* animation: typing 4s steps(11) infinite; */
+   font-size: 3rem;
+   font-family: 'Cookie', cursive;
+ }
+ .participation h3 {
+   width: 10em;
+   overflow: hidden;
+   white-space: nowrap;
+   /* animation: typing 4s steps(11) infinite; */
+   font-size: 3rem;
+   font-family: 'Cookie', cursive;
+ }
+ .benefits h3 {
+   width: 10em;
+   overflow: hidden;
+   white-space: nowrap;
+   /* animation: typing 4s steps(11) infinite; */
+   font-size: 2rem;
+   font-family: 'Cookie', cursive;
+ }
+ .requirements h3 {
+   width: 10em;
+   overflow: hidden;
+   white-space: nowrap;
+   /* animation: typing 4s steps(11) infinite; */
+   font-size: 1rem;
+   font-family: 'Cookie', cursive;
+ }
+ .supporting p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+ }
+
+.requirements::before {
+content: '';
+background-image: url(./cat.png);
+background-repeat: no-repeat;
+background-size: 30% 50vh;
+color:black;
+text-align: center;
+line-height: 400px;
+width: 100%;
+height: 70%;
+position: absolute;
+left: 60%;
+margin-top: -50vh;
+transition: 1s;
+transform: rotate(-30deg);
+filter: drop-shadow(-10px -10px 5px gray);
+pointer-events: none;
+animation: rotateani 20s linear infinite;
+z-index: 49;
+}
+.requirements:hover::before {
+   content: '';
+   background-image: url(/cat.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   color:black;
+   text-align: center;
+   line-height: 400px;
+   width: 50%;
+   height: 20%;
+   position: absolute;
+   left: 85%;
+   margin-top: 0vh;
+   transition: 1s;
+   transform: rotate(-30deg);
+   filter: drop-shadow(-10px -10px 5px gray);
+   pointer-events: none;
+   animation: rotateani 20s linear infinite;
+   z-index: 49;
+   }
+@keyframes rotateani{
+   from{
+     transform: rotate(-30deg);
+   }
+   50%{
+     transform: rotate(-15deg);
+   }
+   to{
+     transform: rotate(-30deg);
+   }
+ }
+
+.summary {
+text-shadow: black 0.1em 0.1em 0.2em
+/* border: gray 5px solid; */
+color: #000;
+/* background: rgb(255, 255, 255); */
+text-transform: uppercase;
+animation: shining 0.05s alternate infinite;
+width: 80%;
+height: 100vh;
+font-size: 2rem;
+line-height:100px;
+font-family: 'Cookie', cursive;
+font-style: italic;
+margin-left:10%;
+/* background-color:rgba(255,255,255,0.5); */
+padding-left:22rem;
+padding-right:22rem;
+padding-top:8rem;
+background-image: url(./埃及bg.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+filter: drop-shadow(15px 5px 10px black);
+float: left;
+font-weight:bolder;
+}
+
+.preamble::after {
+   content: '';
+   text-align: center;
+   width: 100%;
+   height: 80%;
+   position: absolute;
+   margin: auto;
+   top: 70%;
+   transition: 1s;
+   z-index: 999;
+   position: relative;
+   border-radius: 50%;
+   box-shadow: inset 0.5em -0.5em rgba(255,255,205,0.5);
+   animation: spin 10s linear infinite;
+   z-index: 999;
+ 
+   &::before,
+   &::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     background: inherit;
+     border-radius: inherit;
+     box-shadow: inherit;
+   }
+ 
+   &::before {
+     filter: blur(5px);
+   }
+ 
+   &::after {
+     filter: blur(10px);
+   }
+ }
+ 
+ @keyframes spin {
+   to {
+     transform: rotate(1turn);
+   }
+ }
+.supporting{
+   background-image: url(./bg3.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100vh;
+   height: 100vh;
+   width: 90%;
+   /* margin: 10rem; */
+   padding-top: 3rem;
+   padding-left: 10rem;
+   padding-right: 10rem;
+   margin-top: 100rem;
+   margin-left: 5%;
+   position: relative;
+}
+.preamble {
+color: black;
+text-align: center;
+top:110vh;
+left: 33%;
+z-index: 999;
+position: absolute;
+width: 33%;
+animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 5s; /* don't forget to set a duration! */
+}
+.preamble p{
+font-family: 'Cookie', cursive;
+font-size: 3rem;
+line-height: 3rem;
+}
+/* 白色動畫圈圈 */
+.preamble::after { 
+   content: '';
+   text-align: center;
+   width: 100%;
+   height: 80%;
+   position: absolute;
+   margin: auto;
+   top: 70%;
+   transition: 1s;
+   z-index: 999;
+   }
+
+#design-selection {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #design-archives {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #zen-resources {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #design-selection > nav > ul, #design-archives > nav > ul, #zen-resources > ul {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   margin-bottom: 1rem;
+ }
+ 
+ #design-selection:hover > nav > ul, #design-archives:hover > nav > ul, #zen-resources:hover > ul {
+   display: block;
+   width: 200px;
+   height: auto;
+   cursor: pointer;
+ }
+ 
+footer {
+   width: 10%;
+   clear: both;
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   position: absolute;
+   right: 0%;
+   top: 30%;
+}
+footer a:link,
+footer a:visited {
+   text-align: center;
+   height: 30%;
+   width: 80%;
+   font-size: 2rem;
+   line-height: 10vh;
+   filter: glow(color:darkgrey, strength=2); 
+   color:white;  
+    font-weight:900;
+    text-shadow: 1px 1px 5px darkgrey;
+}
+
+.zen-validate-html{
+   background-image: url(./god1.png);
+   width: 50px; 
+   height: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   text-indent: 101%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.zen-validate-css{
+   background-image: url(./god2.png);
+   width: 50px; 
+   height: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   text-indent: 101%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.zen-license{
+   background-image: url(./god3.png);
+   width: 50px; 
+   height: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   text-indent: 101%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.zen-accessibility{
+   background-image: url(./god4.png);
+   width: 50px; 
+   height: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   text-indent: 101%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.zen-github{
+   background-image: url(./god5.png);
+   width: 50px; 
+   height: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   text-indent: 101%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.sidebar {
+   margin-left: 600px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   /* slideExpandUp動畫 */
+   animation-name: slideExpandUp;
+	-webkit-animation-name: slideExpandUp;	
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+	animation-timing-function: ease-out;	 
+	-webkit-animation-timing-function: ease -out;
+	visibility: visible !important;	
+}
+.sidebar .wrapper {
+   background: rgba(187, 183, 151, 0.5);
+   padding: 10px;
+   margin-top: 100px;
+   width: 200px;
+}
+
+@keyframes slideExpandUp {
+	0% {
+		transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		transform: translateY(0%) scaleX(1);		
+	}
+}
+
+@-webkit-keyframes slideExpandUp {
+	0% {
+		-webkit-transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		-webkit-transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		-webkit-transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		-webkit-transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		-webkit-transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		-webkit-transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		-webkit-transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		-webkit-transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		-webkit-transform: translateY(0%) scaleX(1);		
+	}
+}
+
+
+.sidebar ul {
+   margin: 0;
+   padding: 0;
+}
+.sidebar li {
+   line-height: 1.5em;
+   display: block;
+   padding-top: 5px;
+   margin-bottom: 5px;
+   list-style-type: none;
+}
+.sidebar li a:link {
+   color: #988f5e;
+}
+.sidebar li a:visited {
+   color: #b3ae94;
+}
+@media screen and (max-width: 600px){
+header{
+   background-size: contain;
+   margin: 0;
+   padding: 0;
+   top: 0%;
+   position: absolute;
+}
+header h1{
+   position: absolute;
+   top: -60%;
+   width: 50%;
+   font-size: 30px;
+} 
+header h2{
+   position: absolute;
+   top: 18%;
+   left: 40%;
+   width: 50%;
+   font-size: 10px !important;
+} 
+h1, h1::before, h1::after {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 240px;
+   height: 100px;
+   z-index: 999;
+ }
+.summary{
+   font-size: 12px !important;
+   background-size: contain;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   top: 120%;
+}
+#zen-summary h3{
+   line-height: 30px;
+   margin: 0;
+   padding: 0;
+}
+#zen-summary p{
+   font-size: 12px !important;
+   position: absolute;
+   top:10%;
+   width: 60%;
+   line-height: 30px;
+   margin: 0;
+   padding-left: 25%;
+}
+.preamble{
+   font-size: 12px !important;
+   line-height: 10px;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   top: 130%;
+
+}
+.preamble p{
+   font-size: 13px !important;
+   line-height: 15px;
+   margin: 0;
+   padding: 0;
+}
+.preamble h3{
+   font-size: 12px !important;
+   line-height: 15px;
+   margin: 0;
+   padding: 0;
+}
+.preamble::after {
+   width: 20%;
+   height: 20%;
+   margin: 0;
+   padding: 0;
+}
+.supporting{
+   position: absolute;
+   top: 100%;
+   background-image: cover;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0; 
+   font-size: 12px !important;
+   line-height: 5px;
+}
+.supporting h3,p{
+   font-size: 12px !important;
+   line-height: 10px;
+   margin: 0;
+   padding: 0;
+}
+.supporting {
+   font-size: 13px !important;
+   line-height: 15px;
+   margin: 0;
+   padding: 10px;
+}
+.requirements::before {
+background-size: 30% 20vh;
+position: absolute;
+top: 50%;
+}
+
+}
+
