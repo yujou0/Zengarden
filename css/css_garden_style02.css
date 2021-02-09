@@ -100,7 +100,7 @@ font-size: 2rem;
 }
 
 header h1 {
-   top: 210%;
+   top: 160%;
    font-size: 50px;
    color: white;
    text-shadow: black 0.1em 0.1em 0.2em;
@@ -302,8 +302,8 @@ h1, h1::before, h1::after {
    font-family: 'Cookie', cursive;
  }
  .supporting p{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
  }
 
 .requirements::before {
@@ -367,8 +367,8 @@ text-transform: uppercase;
 animation: shining 0.05s alternate infinite;
 width: 80%;
 height: 100vh;
-font-size: 2rem;
-line-height:100px;
+font-size: 1.5rem;
+line-height:50px;
 font-family: 'Cookie', cursive;
 font-style: italic;
 margin-left:10%;
@@ -435,7 +435,7 @@ font-weight:bolder;
    padding-top: 3rem;
    padding-left: 10rem;
    padding-right: 10rem;
-   margin-top: 100rem;
+   margin-top: 180vh;
    margin-left: 5%;
    position: relative;
 }
@@ -452,8 +452,8 @@ animation-duration: 5s; /* don't forget to set a duration! */
 }
 .preamble p{
 font-family: 'Cookie', cursive;
-font-size: 3rem;
-line-height: 3rem;
+font-size: 1.5rem;
+line-height: 2rem;
 }
 /* 白色動畫圈圈 */
 .preamble::after { 
